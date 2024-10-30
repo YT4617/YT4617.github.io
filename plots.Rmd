@@ -1,0 +1,83 @@
+---
+title: "Plots"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+date: "2024-10-17"
+---
+
+```{r,echo=FALSE,message=FALSE,warning=FALSE}
+library(plotly)
+library(dplyr)
+library(p8105.datasets)
+library(flexdashboard)
+library(rnoaa)
+```
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r,echo = FALSE}
+# Scatterplot of temperature vs precipitation
+scatter_data <- ny_noaa %>%
+  filter(!is.na(tmax), !is.na(prcp), !is.na(tmin))%>%
+  sample_frac(0.01)
+fig1 <- plot_ly(scatter_data, 
+                x = ~prcp, 
+                y = ~tmax, 
+                type = 'scatter', 
+                mode = 'markers', 
+                marker = list(color = 'rgba(255, 182, 193, .9)', size = 8)) %>%
+  layout(title = "Scatterplot of Precipitation vs Maximum Temperature",
+         xaxis = list(title = "Precipitation (mm)"),
+         yaxis = list(title = "Maximum Temperature (°C)"))
+
+fig1
+```
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r,echo=FALSE,message = FALSE, warning=FALSE}
+# Line plot of average monthly precipitation over time
+line_data <- ny_noaa %>%
+  filter(!is.na(prcp)) %>%
+  mutate(year = as.integer(substr(date, 1, 4)),
+         month = as.integer(substr(date, 6, 7))) %>%
+  group_by(year, month) %>%
+  summarize(avg_prcp = mean(prcp, na.rm = TRUE))
+
+fig2 <- plot_ly(line_data, 
+                x = ~month, 
+                y = ~avg_prcp, 
+                type = 'scatter', 
+                mode = 'lines+markers', 
+                color = ~as.factor(year)) %>%
+  layout(title = "Average Monthly Precipitation by Year",
+         xaxis = list(title = "Month"),
+         yaxis = list(title = "Average Precipitation (mm)"))
+
+fig2
+```
+### Chart C
+```{r,echo=FALSE,message = FALSE,warning=FALSE}
+# Prepare data for box plot
+boxplot_data <- ny_noaa %>%
+  filter(!is.na(tmax)) %>%
+  mutate(month = as.integer(substr(date, 6, 7)))
+
+fig3 <- plot_ly(boxplot_data, 
+                x = ~as.factor(month), 
+                y = ~tmax, 
+                type = 'box', 
+                marker = list(color = 'rgba(44, 160, 44, 0.6)')) %>%
+  layout(title = "Box Plot of Maximum Temperature by Month",
+         xaxis = list(title = "Month"),
+         yaxis = list(title = "Maximum Temperature (°C)"))
+
+fig3
+```
+
