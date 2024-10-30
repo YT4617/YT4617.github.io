@@ -1,0 +1,24 @@
+---
+title: "Yutong Chen"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: cerulean
+---
+
+# Introduction
+Hello, everyone! My name is Yutong Chen. Welcome to my website. 
+
+- 🎓 I am a first-year MS student at Columbia University Mailman School of Public Health Department of Environmental Health Science and my track is data science. 
+- 📊 I enjoy using analytical methods and data-driven decision-making to discover the causal inference in environmental health issues.
+
+
+
+# CV
+If you'd like to learn more about my academic and professional experience, please visit [this page](about.html).
+
+
+# Course work of P8105
+Here’s a [page](plots.html) with `plotly plots` using `flexdashboard` template which is the class code of ploty and flexdashboard part in P8105.
+

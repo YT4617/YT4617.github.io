@@ -1,0 +1,69 @@
+---
+title: "Resume"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: cerulean
+date: "2024-10-17"
+---
+
+## EDUCATION
+- **Columbia University in the City of New York, NY 09/2024**
+- *Master of Science: Environmental Health Data Science*
+- **Rutgers University in New Brunswick, NJ 09/2020 -- 05/2024**
+- *Bachelor of Science: Computer Science and Business Anlytics*
+
+## RESEARCH EXPERIENCE
+### Heart Disease Mortalities Caused by Socioeconomic Factor in New Jersey
+#### Research Assistant 09/2023 - 08/2024
+- Collected and analyzed county-level data on heart disease and COVID-19 mortalities for individuals aged 65+ in New Jersey from 2017 to 2024.
+- Develop statistical models identifying significant predictors and examining associations through various regression techniques and regularization.
+- Investigated the interaction between heart disease mortality and COVID-19 phases (pre-, during-, and post-pandemic) by incorporating interaction terms in regression models.
+- Contributing as first author to the paper “Evolution of Socio-economic Effects on Heart Disease Death in New Jersey Pre-, During, and Post-COVID” (co-authors: Jin Wang, Javier Cabrera, Michael Katehakis, Dhammika Amaratunga), currently in the final stages of writing and editing and has been submitted to Annals of Operations Research(AOR).
+
+### Duplication of language model datasets in the training process
+#### Researcher Assistant 03/2023 - 05/2023
+- Supported the development of front-end and back-end interaction by building and optimizing a user-friendly website interface.
+- Ensured accurate capture of duplicated language data during training through design adjustments that
+improved accessibility and usability in the interaction process.
+
+
+### Quantitative Analysis Based on Machine Learning in Financial Market
+#### Collaborative team leader 9/2022 - 12/2022
+- Led a team in analyzing historical stock price data (2017–2022) and forecasting 2023 trends using
+machine learning techniques in Python, including Random Forest.
+- Developed optimized portfolios (e.g., maximum Sharpe ratio, minimum volatility) using Modern Portfolio Theory (Markowitz) and calculated the efficient frontier to enhance asset allocation strategies.
+- Authored an independent research paper on this project, presented at the international conference
+ERFRM 2022.
+- Applied Python-based models, including Ordinary Least Squares (OLS), Random Forest, and LightGBM, to forecast five-year price trends for key commodities such as crude oil, gold, and cotton in the
+paper
+
+### Test the correctness of eBPF verifier 
+#### Researcher Assistant 09/2022 - 11/2022
+- Executed eBPF verifier samples in the Linux kernel using Ubuntu to ensure correctness and identify
+issues.
+- Monitored and documented the verifier’s performance, analyzing error logs to provide actionable feedback for improving sample accuracy and functionality
+
+
+## EMOPLOYMENT EXPERIENCE
+### Rutgers University / *Department of Management Science and Information Systems*
+#### Teaching Assistant 01/2024 - 05/2024
+- Graded exams and assignments in the class *Statistical Method in Business*.
+- Assisted professor to solve students’ questions
+
+
+## Awards
+*Dean’s List*, Rutgers University-New Brunswick 2020-2024
+
+
+## Skills
+**Language skills:** Chinese(native), English(fluent), and Korean(elementary)
+
+**Computer skills:** Python, R, Java, JavaScript, SQL, HTML, MATLAB, LaTex
+
+**Software skills:** Mysql, MongoDB
+
+
+
+
