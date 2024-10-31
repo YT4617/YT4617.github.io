@@ -66,6 +66,7 @@ fig2
 ### Chart C
 ```{r,echo=FALSE,message = FALSE}
 # Prepare data for box plot
+
 boxplot_data <- ny_noaa %>%
   filter(!is.na(tmax)) %>%
   mutate(month = as.integer(substr(date, 6, 7)))
